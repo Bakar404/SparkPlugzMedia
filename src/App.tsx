@@ -48,7 +48,7 @@ const App = () => (
       <ThemeToggle />
 
       {/* Client-side routing */}
-      <BrowserRouter>
+      <BrowserRouter basename="/SparkPlugzMedia">
         <Routes>
           {/* Main landing page */}
           <Route path="/" element={<Index />} />
