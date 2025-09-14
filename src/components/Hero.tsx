@@ -36,7 +36,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-start justify-center relative overflow-hidden pt-16"
+      className="min-h-screen flex items-center justify-center md:justify-start relative overflow-hidden pt-16"
     >
       {/* Background image with parallax */}
       <div
@@ -59,7 +59,7 @@ const Hero = () => {
 
       {/* Content with parallax */}
       <div
-        className="relative z-10 container mx-auto px-6 text-center"
+        className="relative z-10 container mx-auto px-6 md:px-10 text-center md:text-left"
         style={{
           transform: `translateY(${textTransform}px)`,
           opacity: opacity,
@@ -100,7 +100,7 @@ const Hero = () => {
           </p>
 
           <div
-            className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 transition-all duration-1200 delay-600 ease-out ${
+            className={`flex flex-col sm:flex-row gap-4 justify-center md:justify-start items-center mb-12 transition-all duration-1200 delay-600 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
@@ -128,7 +128,7 @@ const Hero = () => {
 
           {/* Stats with enhanced visibility */}
           <div
-            className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1200 delay-800 ease-out ${
+            className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto md:mx-0 transition-all duration-1200 delay-800 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
