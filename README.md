@@ -4,7 +4,7 @@
 
 ## 🚀 Project Overview
 
-**Live URL**: https://lovable.dev/projects/8b600397-818c-428e-9da4-0a312fd20f1d
+**Live URL**: https://sparkplugzmedia.com
 
 This is a professional web application for SparkPlugz Media, featuring:
 
@@ -129,11 +129,7 @@ Located in `src/components/ui/ThemeToggle.tsx`, this component:
 
 ### Local Development
 
-#### Option 1: Use Lovable (Recommended)
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8b600397-818c-428e-9da4-0a312fd20f1d) and start prompting. Changes made via Lovable will be committed automatically to this repo.
-
-#### Option 2: Local IDE Development
+#### Local IDE Development
 
 ```bash
 # Clone the repository
@@ -287,19 +283,13 @@ To add new color tokens:
 
 ## 🚀 Deployment
 
-### Lovable Deployment (Recommended)
-
-1. Open [Lovable Project](https://lovable.dev/projects/8b600397-818c-428e-9da4-0a312fd20f1d)
-2. Click **Share** → **Publish**
-3. Your app will be deployed automatically
-
 ### Custom Domain Setup
 
 1. Navigate to **Project** → **Settings** → **Domains**
 2. Click **Connect Domain**
 3. Follow the DNS configuration steps
 
-Read more: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Read more: GitHub Docs – Configuring a custom domain for GitHub Pages
 
 ### Manual Deployment
 
