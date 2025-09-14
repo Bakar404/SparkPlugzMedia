@@ -34,10 +34,7 @@ const Hero = () => {
   const opacity = Math.max(0, 1 - scrollY / 500);
 
   return (
-    <section
-      id="hero"
-      className="min-h-screen relative overflow-hidden pt-16"
-    >
+    <section id="hero" className="min-h-screen relative overflow-hidden pt-16">
       {/* Background image with parallax */}
       <div
         className="absolute inset-0"
@@ -136,19 +133,25 @@ const Hero = () => {
               <div className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-1 drop-shadow-lg">
                 500+
               </div>
-              <div className="text-gray-200 font-medium md:text-lg">Videos Created</div>
+              <div className="text-gray-200 font-medium md:text-lg">
+                Videos Created
+              </div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-5 border border-white/20 shadow-xl">
               <div className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-1 drop-shadow-lg">
                 50M+
               </div>
-              <div className="text-gray-200 font-medium md:text-lg">Views Generated</div>
+              <div className="text-gray-200 font-medium md:text-lg">
+                Views Generated
+              </div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-5 border border-white/20 shadow-xl">
               <div className="text-4xl md:text-5xl font-extrabold text-blue-300 mb-1 drop-shadow-lg">
                 100+
               </div>
-              <div className="text-gray-200 font-medium md:text-lg">Happy Dealerships</div>
+              <div className="text-gray-200 font-medium md:text-lg">
+                Happy Dealerships
+              </div>
             </div>
           </div>
         </div>
