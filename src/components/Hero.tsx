@@ -10,13 +10,13 @@ const Hero = () => {
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     const handleResize = () => setScrollY(window.scrollY);
-    
+
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
-    
+
     // Set initial visibility after component mounts
     setIsVisible(true);
-    
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
@@ -39,11 +39,11 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Background image with parallax */}
-      <div 
+      <div
         className="absolute inset-0"
         style={{
           transform: `translateY(${imageTransform}px)`,
-          transition: scrollY === 0 ? 'transform 0.3s ease-out' : 'none'
+          transition: scrollY === 0 ? "transform 0.3s ease-out" : "none",
         }}
       >
         <img
@@ -58,39 +58,54 @@ const Hero = () => {
       </div>
 
       {/* Content with parallax */}
-      <div 
+      <div
         className="relative z-10 container mx-auto px-6 text-center"
         style={{
           transform: `translateY(${textTransform}px)`,
           opacity: opacity,
-          transition: scrollY === 0 ? 'transform 0.3s ease-out, opacity 0.3s ease-out' : 'none'
+          transition:
+            scrollY === 0
+              ? "transform 0.3s ease-out, opacity 0.3s ease-out"
+              : "none",
         }}
       >
-        <div className={`max-w-4xl mx-auto transition-all duration-1000 ease-out ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          <h1 className={`text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
-            Make Your
-            <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-lg">
-              {" "}
-              Dealership{" "}
+        <div
+          className={`max-w-4xl mx-auto transition-all duration-1000 ease-out ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <h1
+            className={`text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
+            Make Your Dealership Go{" "}
+            <span className="font-black bg-gradient-to-r from-blue-400 via-blue-300 to-cyan-300 bg-clip-text text-transparent drop-shadow-lg">
+              Viral
             </span>
-            Go Viral
           </h1>
 
-          <p className={`text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-xl font-medium transition-all duration-1200 delay-400 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
+          <p
+            className={`text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-xl font-medium transition-all duration-1200 delay-400 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
             We create viral content, skits, and reels that boost your social
             media numbers and make your dealership stand out from the
             competition.
           </p>
 
-          <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 transition-all duration-1200 delay-600 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
+          <div
+            className={`flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 transition-all duration-1200 delay-600 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
             <Button
               variant="hero"
               size="lg"
@@ -112,19 +127,29 @@ const Hero = () => {
           </div>
 
           {/* Stats with enhanced visibility */}
-          <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1200 delay-800 ease-out ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
+          <div
+            className={`grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto transition-all duration-1200 delay-800 ease-out ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}
+          >
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 shadow-xl">
-              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">500+</div>
+              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">
+                500+
+              </div>
               <div className="text-gray-200 font-medium">Videos Created</div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 shadow-xl">
-              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">50M+</div>
+              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">
+                50M+
+              </div>
               <div className="text-gray-200 font-medium">Views Generated</div>
             </div>
             <div className="text-center bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 shadow-xl">
-              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">100+</div>
+              <div className="text-3xl font-bold text-blue-300 mb-2 drop-shadow-lg">
+                100+
+              </div>
               <div className="text-gray-200 font-medium">Happy Dealerships</div>
             </div>
           </div>
@@ -132,9 +157,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ease-out ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-30 translate-y-4'
-      }`}>
+      <div
+        className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ease-out ${
+          isVisible ? "opacity-100 translate-y-0" : "opacity-30 translate-y-4"
+        }`}
+      >
         <div className="animate-bounce">
           <div className="w-6 h-10 border-2 border-white/60 rounded-full p-1">
             <div className="w-1 h-2 bg-white/80 rounded-full mx-auto animate-pulse"></div>
