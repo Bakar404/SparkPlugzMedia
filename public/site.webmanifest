@@ -2,9 +2,9 @@
   "name": "SparkPlugzMedia",
   "short_name": "SparkPlugz",
   "icons": [
-    { "src": "/helmet-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
-    { "src": "/helmet-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+    { "src": "/helmet-icon.ico", "sizes": "any", "type": "image/x-icon" },
+    { "src": "/helmet-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/helmet-icon.png", "sizes": "512x512", "type": "image/png" }
   ],
   "theme_color": "#0B0F1A",
   "background_color": "#0B0F1A",
