@@ -5,8 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages deployment
-  base: mode === "production" ? "/SparkPlugzMedia/" : "/",
+  // Use a relative base so the same build works on:
+  // - GitHub Pages project subpath (e.g., /SparkPlugzMedia/)
+  // - Custom domain at the root (e.g., https://sparkplugzmedia.com/)
+  // This avoids needing separate builds.
+  base: "./",
   server: {
     host: "::",
     port: 8080,

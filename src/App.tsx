@@ -48,7 +48,14 @@ const App = () => (
       <ThemeToggle />
 
       {/* Client-side routing */}
-      <BrowserRouter basename="/SparkPlugzMedia">
+      {/* Use project subpath only on GitHub Pages; root on custom domain */}
+      <BrowserRouter
+        basename={
+          window.location.hostname.endsWith("github.io")
+            ? "/SparkPlugzMedia"
+            : "/"
+        }
+      >
         <Routes>
           {/* Main landing page */}
           <Route path="/" element={<Index />} />
