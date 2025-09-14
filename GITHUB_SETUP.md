@@ -1,11 +1,13 @@
 # GitHub Repository Setup Instructions
 
 ## Repository Details
+
 - **Name**: sparkplugz-media
 - **Description**: Professional React website with dark/light theme system and WCAG AAA accessibility compliance
 - **Visibility**: Public (recommended for portfolio)
 
 ## Features to Highlight in GitHub
+
 - ⚛️ Modern React + TypeScript + Tailwind CSS
 - 🌓 Advanced dark/light theme system (dark default)
 - ♿ WCAG AAA accessibility compliance (7:1+ contrast ratios)
@@ -17,6 +19,7 @@
 - 🔧 Development tools and type definitions
 
 ## Repository Topics (add these as tags on GitHub)
+
 - react
 - typescript
 - tailwindcss
@@ -31,6 +34,7 @@
 - performance
 
 ## Quick Setup Commands
+
 After creating the GitHub repository, run:
 
 ```bash
@@ -40,6 +44,7 @@ git push -u origin main
 ```
 
 ## Repository Structure
+
 ```
 ├── src/                 # Source code
 │   ├── components/      # React components

@@ -30,10 +30,11 @@ src/
 │   └── utils.ts         # Tailwind utility functions
 ├── types/               # TypeScript type definitions
 │   └── theme.ts         # Theme system types
-├── assets/              # Static images and assets
-│   ├── hero-image.jpg   # Main hero background
-│   ├── team-image.jpg   # Team/about section image
-│   └── equipment-image.jpg # Equipment/services image
+├── src/
+│   ├── assets/
+│   │   ├── Landing-page-picture.png # Main hero background
+│   │   ├── equipment-image.jpg # Services section image
+│   │   └── team-image.jpg      # About section image
 └── index.css           # Global styles and design tokens
 ```
 
