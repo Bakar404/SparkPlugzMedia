@@ -75,7 +75,7 @@ const Hero = () => {
           }`}
         >
           <h1
-            className={`text-5xl md:text-7xl font-bold mb-6 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out ${
+            className={`text-3xl md:text-5xl font-bold mb-12 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
