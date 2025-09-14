@@ -36,7 +36,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
+      className="min-h-screen flex items-start justify-center relative overflow-hidden pt-16"
     >
       {/* Background image with parallax */}
       <div
@@ -75,7 +75,7 @@ const Hero = () => {
           }`}
         >
           <h1
-            className={`text-3xl md:text-5xl font-bold mb-12 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out ${
+            className={`text-3xl md:text-5xl font-bold mb-8 leading-tight text-white drop-shadow-2xl transition-all duration-1200 delay-200 ease-out -mt-8 ${
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-8"
